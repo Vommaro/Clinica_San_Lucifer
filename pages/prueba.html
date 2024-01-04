@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Menú Desplegable con Hover</title>
+  <style>
+    /* Estilos para el menú */
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .menu li {
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .menu li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f0f0f0;
+      padding: 0;
+      border-radius: 5px;
+    }
+    .menu li:hover ul {
+      display: block;
+    }
+    .menu li ul li {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 10px;
+    }
+    /* Estilos visuales */
+    .menu a {
+      text-decoration: none;
+      color: #333;
+    }
+    .menu ul ul {
+      top: 0;
+      left: 100%;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li>
+      <a href="#">Inicio</a>
+    </li>
+    <li>
+      <a href="#">Productos</a>
+      <ul>
+        <li><a href="#">Producto 1</a></li>
+        <li><a href="#">Producto 2</a></li>
+        <li><a href="#">Producto 3</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Servicios</a>
+      <ul>
+        <li><a href="#">Servicio 1</a></li>
+        <li><a href="#">Servicio 2</a></li>
+        <li><a href="#">Servicio 3</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Contacto</a>
+    </li>
+  </ul>
+</body>
+</html>
