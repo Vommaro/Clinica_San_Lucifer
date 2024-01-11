@@ -1,0 +1,14 @@
+.cont__testimonios{
+    display: flex;
+    justify-content: center;
+
+    .card__testi{
+        display: flex;
+        flex-grow: 1;
+    }
+}
+.item__lista{
+    font-size: 20px;
+    padding: 0.5rem;
+
+}
