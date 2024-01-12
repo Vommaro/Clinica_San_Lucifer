@@ -7,7 +7,7 @@
         display: flex;
         flex-grow: 1;
         padding-inline: 2rem;
-        justify-content: space-between  ;
+        justify-content: space-around  ;
         align-items: center;
 
 
@@ -48,6 +48,10 @@
     
         .img__redes{
             width: 50px;
+
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
 
@@ -55,6 +59,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 }
 
@@ -91,13 +96,12 @@
 
 
 .chatea{
-    color: black;
+    color: #0088e291;
     position: fixed;
-    top: 89 vh;
-    padding: 1rem;
-    width: 100px;
-    height: 100px;
-    right: 0;
+    top: 89%;
+    width: 50px;
+    height: 50px;
+    right: 50px;
 
     &:hover{
         transform: scale(1.3);

@@ -109,7 +109,7 @@ a {
   display: flex;
   flex-grow: 1;
   padding-inline: 2rem;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .footer .asociate .texto__socio {
@@ -147,10 +147,14 @@ a {
 .footer .cont__footer .redes .img__redes {
   width: 50px;
 }
+.footer .cont__footer .redes .img__redes:hover {
+  transform: scale(1.1);
+}
 .footer .cont__footer .copirigth {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .footer .subcont__redes {
   display: flex;
@@ -174,28 +178,15 @@ a {
   color: white;
 }
 .footer .chatea {
-  color: black;
+  color: rgba(0, 136, 226, 0.568627451);
   position: fixed;
-  top: 89 vh;
-  padding: 1rem;
-  width: 100px;
-  height: 100px;
-  right: 0;
+  top: 89%;
+  width: 50px;
+  height: 50px;
+  right: 50px;
 }
 .footer .chatea:hover {
   transform: scale(1.3);
-}
-
-.conteiner__contacto {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1rem;
-}
-
-.conteiner__turno {
-  display: flex;
-  justify-content: center;
 }
 
 .cont__noticias {
@@ -275,6 +266,20 @@ a {
 .conteiner__turno {
   display: flex;
   justify-content: center;
+}
+
+.cont__pregunta {
+  border-bottom: solid black 1px;
+}
+
+.color__1 {
+  background-color: #6767e4;
+  color: white;
+}
+
+.color__2 {
+  background-color: #add8e6;
+  color: black;
 }
 
 @media screen and (max-width: 1300px) {
