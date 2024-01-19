@@ -1,5 +1,5 @@
 .header{
-    min-height: 300px;
+    min-height: 500px;
     background-image: url('../img/Banner1.png');
     background-size: cover; 
     background-position: center; 
@@ -7,6 +7,17 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    position: relative;
+
+
+
+    .gradiente {
+        background-image: linear-gradient(rgba(34, 175, 240, 0.61), transparent, transparent, transparent,transparent,transparent,transparent, transparent);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
     
 
 
@@ -19,6 +30,14 @@
         flex-grow: 1;
         gap: 1rem;
 
+        .boton__navbar{
+            display: none;
+
+            @include laptop {
+                display: block;
+            }
+        }
+
         .cont__img{
             width: 75px;
             height: 75px;
@@ -30,8 +49,7 @@
                 border-radius: 50%;
                 display: flex;
                 &:hover{
-                    opacity: 0.9;
-                    transform: scale(1.1);        
+                    opacity: 0.8;   
                 }
             }
         }
@@ -67,7 +85,8 @@
                             border: solid #6767e4 2px;
                             color: #6767e4;  
                             border-radius: 7px;
-                            transform: translateY(-0.5rem);            
+                            transform: translateY(-0.2rem);         
+                            transition: 0.5s;
                         }
                     }
                 }
