@@ -1,12 +1,25 @@
 .cont__pregunta{
-    border-bottom: solid black 1px;
+    border-bottom: solid black 0.5px;
     
 }
 .color__1{
-    background-color: #6767e4 ;
+    background-color: $maincolor ;
     color: white;
+
+    &:hover{
+        background-color: white;
+        border: $maincolor solid 1px;
+        color: $maincolor;
+    }
 }
 .color__2{
-    background-color: #add8e6;
+    background-color: $terciarycolor;
     color: black;
+
+    &:hover{
+        background-color: white;
+        border: $terciarycolor solid 1px;
+        color: rgb(15, 161, 180);
+        
+    }
 }
