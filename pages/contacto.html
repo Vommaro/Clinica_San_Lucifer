@@ -14,33 +14,38 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <!-- Link Css -->
         <link rel="stylesheet" href="../css/style.css">
-
 </head>
 <body class="body scale-in-top">
     <header class="header">
-
       <div class="gradiente"></div>
-
-
         <nav class="navbar bg-body-tertiary nav">
-
             <div class="container-fluid fondo__main">
 
                 <div class="cont__img">
                     <a href="../index.html"><img class="logo" src="../img/logo.jpg" alt="Logo"></a>
                 </div>
                 <div class="cont__menu">
-                    <ul class="menu">
-                        <a href="../index.html"><li class="item__menu">Home</li></a>
-                        <a href="./turnos.html"><li class="item__menu">Turnos</li></a>
-                        <a href="./laboratorio.html"><li class="item__menu">Laboratorio</li></a>
-                        <a href="./valores.html"><li class="item__menu">Nuestros Valores</li></a>
-                        <a href="#"><li class="item__menu borrar">Contacto</li></a>
-                        <a href="./preguntas.html"><li class="item__menu borrar">Preguntas Frecuentes</li></a>
-                    </ul>
-                </div>
-    
-
+                  <ul class="menu">
+                    <li class="item__menu" id="itemMenu">
+                      <a href="../index.html">Home</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="./turnos.html">Turnos</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="./laboratorio.html">Laboratorio</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="./valores.html">Nuestros Valores</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="./preguntas.html">Preguntas Frecuentes</a>
+                    </li>
+                  </ul>
+              </div>
               <a class="navbar-brand" href="#"></a>
               <button class="navbar-toggler fondo__blanco boton__navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,7 +57,6 @@
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
@@ -81,51 +85,44 @@
             </div>
           </nav>
     </header>
-
 <main class="main">
-
-
     <div class="conteiner__contacto container row">
       <h1 class="titulo h1 col-md-12 text-focus-in">Bienvenidos a la Clínica San Lucifer</h1>
-
-
         <div class="form__contac col-md-6">
-            <h2 class="texto h2">Dejanos tus Datos y te Contactaremos</h2>
+            <h2 class="titulo h2">Dejanos tus Datos y te Contactaremos</h2>
             <div class="">
-                <label for="inputEmail4" class="form-label">Nombre y Apellido</label>
+                <label for="inputEmail4" class="form-label texto">Nombre y Apellido</label>
                 <input type="email" class="form-control" id="inputEmail4" placeholder="Ingrese Su Nombre Completo">
             </div>
             <div class="">
-                <label for="inputPassword4" class="form-label">Direccion de E-mail</label>
+                <label for="inputPassword4" class="form-label texto">Direccion de E-mail</label>
                 <input type="password" class="form-control" id="inputPassword4" placeholder="Ingrese una Direccion de correo Valida">
             </div>
             <div class="">
-                <label for="inputAddress" class="form-label">Telefono</label>
+                <label for="inputAddress" class="form-label texto">Telefono</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese un Telefono de Contacto">
             </div>
             <div class="">
-                <label for="inputAddress" class="form-label">Notas</label>
+                <label for="inputAddress" class="form-label texto">Notas</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="Dejanos tu mensaje">
             </div>
-
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                Acepto los Terminos y Condiciones <a href="../pdfs/Términos y condiciones.pdf"tyc>leer...</a>
+                <input class="form-check-input m-2" type="checkbox" id="gridCheck">
+                <label class="form-check-label m-1" for="gridCheck">
+                Acepto los Terminos y Condiciones <a class="leer" href="../pdfs/Términos y condiciones.pdf"tyc>leer...</a>
                 </label>
                 <hr>
             </div>
-
-            <div class="col-12 ">
-                <a class="redirect" href="../pages/cargafallida.html">
-                <button type="submit" class="btn btn-primary btn__registro button__filtros">Enviar</button>
-                </a>
+                <div class="col-12 m-3">
+                  <a class="redirect" href="#">
+                  <button type="submit" class="btn btn-primary btn__registro button__filtros">Enviar</button>
+                  </a>
                 </div>
-</div>
-        <div class="cont__mapa col-md-6">
-            <h2 class="texto h2">Tambien Nos Podes Encontrar en..</h2>
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105076.90795980129!2d-58.46643896432256!3d-34.61292562801606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3d05457fbb%3A0xe160f4fce7f7c017!2sBuenos%20Aires!5e0!3m2!1ses!2sar!4v1699571905869!5m2!1ses!2sar" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <a class="mapa__link" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105076.90795980129!2d-58.46643896432256!3d-34.61292562801606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3d05457fbb%3A0xe160f4fce7f7c017!2sBuenos%20Aires!5e0!3m2!1ses!2sar!4v1699571905869!5m2!1ses!2sar">Como Llegar...</a>
+          </div>
+        <div class="cont__mapa col-md-6 row">
+            <h2 class="titulo h2">Tambien Nos Podes Encontrar en..</h2>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105076.90795980129!2d-58.46643896432256!3d-34.61292562801606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3d05457fbb%3A0xe160f4fce7f7c017!2sBuenos%20Aires!5e0!3m2!1ses!2sar!4v1699571905869!5m2!1ses!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a class="mapa__link leer" target="_blank" href="https://www.google.com.ar/maps/place/Buenos+Aires/@-34.6157512,-58.5158774,12z/data=!3m1!4b1!4m6!3m5!1s0x95bcca3d05457fbb:0xe160f4fce7f7c017!8m2!3d-34.6143048!4d-58.4401655!16s%2Fg%2F1tw_pfss?entry=ttu"><br>  Como Llegar...</a>
 
 
         </div>

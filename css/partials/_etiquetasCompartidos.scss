@@ -1,5 +1,6 @@
 a{
     text-decoration: none;
+    color: black;
 }
 ul{
     list-style: none;
@@ -15,21 +16,55 @@ ul{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 1rem;
-    margin: 2rem;
+    margin: 1.25rem;
           }
 .texto{
     display: flex;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     flex-wrap: wrap;
     padding: 0.5rem;
-    @include mobile{
-        font-size: 16px;
-        padding: 0.25rem;
+    margin-bottom: 0;
+    @include laptop{
+        font-size: 18px;
     }
-    }
-.texto__blanco{
-    color: white;
-}
-    
+    @include mobile{ 
+        font-size: 16px; 
+        padding: 0.25rem; 
+        } 
+    } 
+.texto__blanco{ 
+    color: white; 
+} 
+.leer{ 
+    display: inline;
+    padding: 0.5rem;
+    font-size: 14px;
+    color: $maincolor;
+    &:hover{
+        text-decoration: underline;
+     }
+} 
+// // Dark Mode
+// :root {
+//     --background-color-light: #fff;
+//     --text-color-light: #333;
+//     --background-color-dark: #333;
+//     --text-color-dark: #fff;
+//   }
+  
+//   body {
+//     background-color: var(--background-color-light);
+//     color: var(--text-color-light);
+//     transition: background-color 0.3s, color 0.3s;
+//   }
+  
+//   /* Cambios en el modo oscuro */
+//   @media (prefers-color-scheme: dark) {
+//     body {
+//       background-color: var(--background-color-dark);
+//       color: var(--text-color-dark);
+//     }
+//   }
+  

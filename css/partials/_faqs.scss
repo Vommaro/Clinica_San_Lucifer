@@ -1,11 +1,9 @@
 .cont__pregunta{
     border-bottom: solid black 0.5px;
-    
 }
 .color__1{
     background-color: $maincolor ;
     color: white;
-
     &:hover{
         background-color: white;
         border: $maincolor solid 1px;
@@ -15,11 +13,9 @@
 .color__2{
     background-color: $terciarycolor;
     color: black;
-
     &:hover{
         background-color: white;
         border: $terciarycolor solid 1px;
         color: rgb(15, 161, 180);
-        
     }
 }

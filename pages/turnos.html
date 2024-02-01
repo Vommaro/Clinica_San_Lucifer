@@ -18,29 +18,35 @@
 </head>
 <body class="body scale-in-top">
     <header class="header">
-
       <div class="gradiente"></div>
-
-
         <nav class="navbar bg-body-tertiary nav">
-
             <div class="container-fluid fondo__main">
 
                 <div class="cont__img">
                   <a href="../index.html"><img class="logo" src="../img/logo.jpg" alt="Logo"></a>
                 </div>
                 <div class="cont__menu">
-                    <ul class="menu">
-                        <a href="../index.html"><li class="item__menu">Home</li></a>
-                        <a href="#"><li class="item__menu">Turnos</li></a>
-                        <a href="./laboratorio.html"><li class="item__menu">Laboratorio</li></a>
-                        <a href="./valores.html"><li class="item__menu">Nuestros Valores</li></a>
-                        <a href="./contacto.html"><li class="item__menu borrar">Contacto</li></a>
-                        <a href="./preguntas.html"><li class="item__menu borrar">Preguntas Frecuentes</li></a>
-                    </ul>
+                  <ul class="menu">
+                    <li class="item__menu" id="itemMenu">
+                      <a href="../index.html">Home</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="#">Turnos</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="./laboratorio.html">Laboratorio</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="./valores.html">Nuestros Valores</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="./preguntas.html">Preguntas Frecuentes</a>
+                    </li>
+                  </ul>
                 </div>
-    
-
               <a class="navbar-brand" href="#"></a>
               <button class="navbar-toggler fondo__blanco boton__navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,7 +58,6 @@
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
@@ -81,98 +86,75 @@
             </div>
           </nav>
     </header>
-
 <main class="main container">
-
-
     <div class="conteiner__turno container row">
-
-
       <h1 class="titulo h1 text-focus-in">Bienvenidos a la Clínica San Lucifer</h1>
-
-
 <!-- FORM CONTACTO -->
         <div class="form__contac col-lg-6">
-
             <h2 class="titulo h2">Completa los campos y Pedi tu turno</h2>
-
-            <div class="col-12>
-                <label for="inputEmail4" class="form-label">Nombre y Apellido</label>
+            <div class="col-12">
+                <label for="inputEmail4" class="form-label texto">Nombre y Apellido</label>
                 <input type="email" class="form-control" id="inputEmail4" placeholder="Ingrese Su Nombre Completo">
             </div>
-
             <div class="col-12">
-                <label for="inputPassword4" class="form-label">Direccion de E-mail</label>
+                <label for="inputPassword4" class="form-label texto">Direccion de E-mail</label>
                 <input type="password" class="form-control" id="inputPassword4" placeholder="Ingrese una Direccion de correo Valida">
             </div>
-
             <div class="col-12">
-                <label for="inputAddress" class="form-label">Telefono</label>
+                <label for="inputAddress" class="form-label texto">Telefono</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese un Telefono de Contacto">
             </div>
-
             <div class="col-12">
-                <label for="inputAddress" class="form-label">Cobertura Medica</label>
+                <label for="inputAddress" class="form-label texto">Cobertura Medica</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="Indique su Cobertura/Prepaga">
             </div>
-
             <div class="col-12">
-                <label for="inputState" class="form-label">Horario Deseado</label>
+                <label for="inputState" class="form-label texto">Horario Deseado</label>
                 <select id="inputState" class="form-select">
                   <option selected>Elegir...</option>
                   <option>08:00</option><option>09:00</option><option>10:00</option><option>11:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option><option>19:00</option>
                 </select>
               </div>
-
               <div class="col-12">
-                <label for="inputState" class="form-label">Clinica</label>
+                <label for="inputState" class="form-label texto">Clinica</label>
                 <select id="inputState" class="form-select">
                   <option selected>Elegir...</option>
                   <option>Cede CABA</option><option>Cede Zona Oeste</option><option>Cede Zona Sur</option><option>Cede Zona Norte</option><option>Cede Cordoba</option><option>Cede Santa Fe</option>
                 </select>
               </div>
-
               <div class="col-12">
-                <label for="inputState" class="form-label">Especialidad</label>
+                <label for="inputState" class="form-label texto">Especialidad</label>
                 <select id="inputState" class="form-select">
                   <option selected>Elegir...</option>
-                  <option>cardiología</option><option>Traumatologia</option><option>Pediatria</option><option>Ginecologia</option><option>Cirugia General</option><option>Nutricion</option>
+                  <option>Cardiología</option><option>Traumatologia</option><option>Pediatria</option><option>Ginecologia</option><option>Cirugia General</option><option>Nutricion</option>
                 </select>
               </div>
-
-
-              <div class="form-check">
+              <div class="form-check mb-2 mt-2">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
                 <label class="form-check-label" for="gridCheck">
-                Acepto los Terminos y Condiciones <a href="../pdfs/Términos y condiciones.pdf"tyc>leer...</a>
+                Acepto los Terminos y Condiciones <a class="leer" href="../pdfs/Términos y condiciones.pdf"tyc>Leer...</a>
                 </label>
-                
+              </div>
             <div class="col-12 ">
-                <a class="redirect" href="../pages/cargafallida.html">
-                <button type="submit" class="btn btn-primary btn__registro button__filtros">solicitar</button>
+                <a class="redirect" href="#">
+                <button type="submit" class="btn btn-primary mt-1 ">solicitar</button>
                 </a>
                 </div>
-            </div>
-
+            
             </div>
 <!-- INSTRUCCIONES -->
             <div class="container col-lg-6">
                 <h3 class="titulo h3">Instrucciones para la Solicitud de Turnos</h3>
                     <p class="texto">Gracias por considerar la Clínica San Lucifer para su atención médica. Para solicitar un turno, complete nuestro formulario en línea proporcionando detalles sobre su consulta y sus preferencias de fecha y hora. Una vez enviado, nuestro equipo revisará su solicitud y se comunicará con usted para confirmar la disponibilidad del turno.</p>
-
                 <h4 class="titulo h4">Información Importante sobre los Seguros</h4>
                     <p class="texto">La Clínica San Lucifer acepta una amplia variedad de seguros médicos. Sin embargo, le recomendamos verificar directamente con su proveedor de seguros la cobertura específica para su consulta o tratamiento médico. Si tiene alguna pregunta sobre la aceptación de seguros, no dude en contactarnos para obtener asistencia adicional.</p>
-
                 <h4 class="titulo h4">Política de Cancelación y Reconfirmación de Turnos</h4>
                     <p class="texto">Entendemos que pueden surgir imprevistos que requieran cancelar o reprogramar su turno. Agradecemos que nos notifique con al menos 24 horas de anticipación si necesita cambiar su cita. La ausencia o cancelación tardía de su turno sin previo aviso podría resultar en la aplicación de cargos por ausencia.</p>
-
                 <h4 class="titulo h4">Política de Ausencia a Turnos Programados</h4>
                     <p class="texto">En la Clínica San Lucifer valoramos el tiempo dedicado a la atención médica. La ausencia sin previo aviso a un turno programado que resulte en una falta grave o reiterada será sujeta a una política de penalización. Esta política puede incluir la imposición de cargos por la ausencia o la reducción de la prioridad en futuras citas.</p>
-                
             </div>
         </div>
 </main>
-
 <footer class="footer">
   <div class="asociate">
       <div>
@@ -180,12 +162,9 @@
           <p class="texto texto__chiquito">Consegui Hasta un 20% OFF Contratando Nuestros Planes de Salud Integral</p>
       </div>
       <a href="./planesSalud.html"><button type="button" class="btn btn-primary">Ver Beneficios</button></a>
-
   </div>
-
   <div class="cont__footer">
       <div class="texto cont__contacto row">
-
           <div class="subcont__redes col-lg-3 col-md-6">
               <div class="cajita">
                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
@@ -196,7 +175,6 @@
               </div>
               <p class="texto">Calle Falsa 123, Springfield</p>
           </div>
-
           <div class="subcont__redes col-lg-3 col-md-6">
               <div class="cajita">
                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
@@ -206,7 +184,6 @@
               </div>
               <p class="texto">Cel. +54 011 1122-3344 <br>Tel. 011 4466-7788 <br>Fax. 999-0000 </p>
           </div>
-
           <div class="subcont__redes col-lg-3 col-md-6">
               <div class="cajita">
                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope-arrow-down" viewBox="0 0 16 16">
@@ -218,7 +195,6 @@
               <p class="texto"><a class="mail" href="https://www.gmail.com/" target="_blank">Clinica@SanLucifer.com</a></p>
               </p>
           </div>
-          
           <div class="subcont__redes col-lg-3 col-md-6">
               <div class="cajita">
                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16">
@@ -229,9 +205,7 @@
               </div>
               <p class="texto"><a class="mail" href="https://www.gmail.com/" target="_blank">rrhh@SanLucifer.com</a></p>
           </div>
-
       </div>
-
       <p class="texto texto__redes">Seguinos en Nuestras Redes</p>
       <div class="redes">
           <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img class="img__redes" src="../img/Whatsapp.jpe" alt="Logo Whatsapps"></a>
@@ -243,12 +217,10 @@
           <p>Por Emergencias comunicarse al 911 o 0800-SanLucifer (666-6666).</p>
           <p>®Todos los Derechos Reservados®</p>   
       </div>
-
       <svg class="chatea" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
         <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
       </svg>
   </div>
 </footer>
-
     </body>
     </html>

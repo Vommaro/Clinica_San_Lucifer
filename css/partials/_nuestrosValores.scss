@@ -1,7 +1,6 @@
 .cont__testimonios{
     display: flex;
     justify-content: center;
-
     .card__testi{
         display: flex;
         flex-grow: 1;
@@ -9,6 +8,13 @@
 }
 .item__lista{
     font-size: 20px;
+    font-family: "Roboto", sans-serif;
     padding: 0.5rem;
-
-}
+    @include laptop{
+        font-size: 18px;
+    }
+    @include mobile{
+        font-size: 16px;
+        padding: 0.25rem;
+    } 
+} 

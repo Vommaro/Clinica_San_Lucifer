@@ -12,35 +12,42 @@
         <!-- Bootstrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <!-- Link Css -->
+    <!-- Link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+    <!-- Link Css -->
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
-<body class="body scale-in-top">
-
+<body class="body">
     <header class="header">
-
       <div class="gradiente"></div>
-
         <nav class="navbar bg-body-tertiary nav">
-
             <div class="container-fluid fondo__main">
-
                 <div class="cont__img">
-                   <a href="../index.html"><img class="logo" src="../img/logo.jpg" alt="Logo"></a>
+                   <a href="../index.html"><img class="logo" src="../img/logo.jpg" alt="Logo Clinica San Lucifer"></a>
                 </div>
                 <div class="cont__menu">
-                    <ul class="menu">
-                        <a href="../index.html"><li class="item__menu">Home</li></a>
-                        <a href="./turnos.html"><li class="item__menu">Turnos</li></a>
-                        <a href="./laboratorio.html"><li class="item__menu">Laboratorio</li></a>
-                        <a href="./valores.html"><li class="item__menu">Nuestros Valores</li></a>
-                        <a href="./contacto.html"><li class="item__menu borrar">Contacto</li></a>
-                        <a href="./preguntas.html"><li class="item__menu borrar">Preguntas Frecuentes</li></a>
-                    </ul>
+                  <ul class="menu">
+                    <li class="item__menu" id="itemMenu">
+                      <a href="../index.html">Home</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="#">Turnos</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="./laboratorio.html">Laboratorio</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="./valores.html">Nuestros Valores</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="item__menu" id="itemMenu">
+                      <a href="./preguntas.html">Preguntas Frecuentes</a>
+                    </li>
+                  </ul>
                 </div>
-    
-
               <a class="navbar-brand" href="#"></a>
               <button class="navbar-toggler fondo__blanco boton__navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,7 +59,6 @@
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
@@ -81,21 +87,17 @@
             </div>
           </nav>
     </header>
-
     <main class="main">
-
       <div class="Planes container row m-3">
-
             <h1 class="titulo h1 col-md-12 text-focus-in">Bienvenidos a la Clínica San Lucifer</h1>
             <h2 class=" h2 col-md-12 m-4 p-2">¡Descubre Nuestros Planes Médicos Personalizados!</h2>
-            
-
-            <div class="plan plan-A col-md-12">
+            <div  class="plan plan-A col-md-12"                  
+                  data-aos="fade-right"
+                  data-aos-offset="600"
+                  data-aos-easing="ease-in-sine">
                 <h3 class=" h3 m-3">Plan Azul</h3>
                 <h4 class=" h4">Cobertura Integral a un Precio Accesible</h4>
-
                 <p class="texto p-2">El Plan Azul es perfecto para aquellos que buscan una cobertura médica integral a un costo asequible. Incluye servicios esenciales como consultas médicas, análisis de laboratorio y acceso a una red de profesionales de la salud de confianza.</p>
-
                 <h4 class=" h4">Beneficios Destacados</h4>
                     <ul class="lista">
                       <li class="item__lista">Consultas médicas ilimitadas.</li>
@@ -103,22 +105,19 @@
                       <li class="item__lista">Descuentos en medicamentos recetados.</li>
                       <li class="item__lista">Acceso a servicios de emergencia las 24 horas.</li>
                     </ul>
-
                     <div class="pdf">
-                      <a href="../pdfs/Términos y condiciones.pdf" target="_blank"><section class="texto texto__pdf">Descargue Su Cartilla Medica</section></a>
-                      <a href="../pdfs/Términos y condiciones.pdf" target="_blank"><img class=" img__pdf" src="../img/cartilla.webp" alt="CartillaMedica"></a>
+                      <a href="../pdfs/Cartilla Médica.pdf" target="_blank"><section class="texto texto__pdf">Descargue Su Cartilla Medica</section></a>
+                      <a href="../pdfs/Cartilla Médica.pdf" target="_blank"><img class=" img__pdf" src="../img/cartilla.webp" alt="Cartilla Medica"></a>
                       <a href="./contacto.html"><button class="button">Quiero Este Plan</button></a>
                     </div>
-                    
-
               </div>
-      
-          <div class="plan plan-P col-md-12">
+          <div  class="plan plan-P col-md-12"                  
+                data-aos="fade-left"
+                data-aos-offset="600"
+                data-aos-easing="ease-in-sine">
               <h3 class=" h3 m-3">Plan Plata</h3>
               <h4 class=" h4">Equilibrio Perfecto entre Cobertura y Costo</h4>
-
               <p class="texto p-2">El Plan Plata ofrece un equilibrio perfecto entre una cobertura extensa y un costo razonable. Con este plan, obtienes beneficios adicionales, como especialistas incluidos, servicios preventivos y opciones de atención médica más avanzada.</p>
-
               <h4 class=" h4">Beneficios Destacados</h4>
                   <ul class="lista">
                       <li class="item__lista">Consultas con especialistas incluidas.</li>
@@ -126,23 +125,19 @@
                       <li class="item__lista">Cobertura para procedimientos ambulatorios.</li>
                       <li class="item__lista">Descuentos en servicios de bienestar y atención preventiva.</li>
                   </ul>
-
                   <div class="pdf">
-                    <a href="../pdfs/Términos y condiciones.pdf" target="_blank"><section class="texto texto__pdf">Descargue Su Cartilla Medica</section></a>
-                    <a href="../pdfs/Términos y condiciones.pdf" target="_blank"><img class=" img__pdf" src="../img/cartilla.webp" alt="CartillaMedica"></a>
+                    <a href="../pdfs/Cartilla Médica.pdf" target="_blank"><section class="texto texto__pdf">Descargue Su Cartilla Medica</section></a>
+                    <a href="../pdfs/Cartilla Médica.pdf" target="_blank"><img class=" img__pdf" src="../img/cartilla.webp" alt="Cartilla Medica"></a>
                     <a href="./contacto.html"><button class="button">Quiero Este Plan</button></a>
                   </div>
-
-
-
           </div>
-
-          <div class="plan plan-O col-md-12">          
+          <div  class="plan plan-O col-md-12"
+                data-aos="fade-right"
+                data-aos-offset="600"
+                data-aos-easing="ease-in-sine">          
               <h3 class=" h3 m-3">Plan Oro</h3>
               <h4 class=" h4">Cobertura Excepcional para tus Necesidades Médicas</h4>
-
               <p class="texto p-2">El Plan Oro está diseñado para aquellos que buscan una cobertura excepcional y una atención médica de primera calidad. Incluye servicios ampliados, acceso a los mejores hospitales y una gama completa de opciones de atención médica.</p>
-
               <h4 class=" h4">Beneficios Destacados</h4>
                   <ul class="lista">
                       <li class="item__lista">Acceso a una red premium de hospitales y especialistas.</li>
@@ -150,26 +145,20 @@
                       <li class="item__lista">Programas de bienestar y descuentos en servicios de salud alternativa.</li>
                       <li class="item__lista">Cobertura completa para hospitalización.</li>
                   </ul>
-
                   <div class="pdf">
-                    <a href="../pdfs/Términos y condiciones.pdf" target="_blank"><section class="texto texto__pdf">Descargue Su Cartilla Medica</section></a>
-                    <a href="../pdfs/Términos y condiciones.pdf" target="_blank"><img class=" img__pdf" src="../img/cartilla.webp" alt="CartillaMedica"></a>
+                    <a href="../pdfs/Cartilla Médica.pdf" target="_blank"><section class="texto texto__pdf">Descargue Su Cartilla Medica</section></a>
+                    <a href="../pdfs/Cartilla Médica.pdf" target="_blank"><img class=" img__pdf" src="../img/cartilla.webp" alt="Cartilla Medica"></a>
                     <a href="./contacto.html"><button class="button">Quiero Este Plan</button></a>
                   </div>
-
           </div>
-
-          
           <div class="plan card col-md-12">
               <div class="bg uwu"></div>
               <div class="bg"></div>
               <div class="content">
-                <div class="plan col-md-12">
+                <div class=" col-md-12">
                     <h3 class=" h3 m-3">Plan Diamante</h3>
                     <h4 class=" h4">La Máxima Excelencia en Atención Médica</h4>
-                
                     <p class="texto texto__blanco p-2">Nuestro Plan Diamante ofrece la máxima excelencia en atención médica, con cobertura completa para todas tus necesidades de   Este plan premium incluye servicios exclusivos, atención personalizada y acceso privilegiado a los mejores profesionales médicos.</p>
-                
                     <h4 class=" h4">Beneficios Destacados</h4>
                         <ul class="lista">
                             <li class="item__lista">Atención médica personalizada.</li>
@@ -178,19 +167,16 @@
                             <li class="item__lista">Programas de salud y bienestar personalizados.</li>
                             <li class="item__lista">Posibilidad de 1 Cirugia anual sin cargo</li>
                         </ul>
-
                         <div class="pdf">
-                          <a href="../pdfs/Términos y condiciones.pdf" target="_blank"><section class="texto texto__pdf texto__blanco">Descargue Su Cartilla Medica</section></a>
-                          <a href="../pdfs/Términos y condiciones.pdf" target="_blank"><img class=" img__pdf" src="../img/cartilla.webp" alt="CartillaMedica"></a>
+                          <a href="../pdfs/Cartilla Médica.pdf" target="_blank"><section class="texto texto__pdf texto__blanco">Descargue Su Cartilla Medica</section></a>
+                          <a href="../pdfs/Cartilla Médica.pdf" target="_blank"><img class=" img__pdf" src="../img/cartilla.webp" alt="Cartilla Medica"></a>
                           <a href="./contacto.html"><button class="button">Quiero Este Plan</button></a>
                         </div>
-    
                   </div>      
               </div>
           </div>
         </div>
     </main>
-
     <footer class="footer">
         <div class="asociate">
             <div>
@@ -198,14 +184,9 @@
                 <p class="texto texto__chiquito">Consegui Hasta un 20% OFF Contratando Nuestros Planes de Salud Integral</p>
             </div>
             <a href="#"><button type="button" class="btn btn-primary">Ver Beneficios</button></a>
-
-
         </div>
-    
-    
         <div class="cont__footer">
             <div class="texto cont__contacto row">
-    
                 <div class="subcont__redes col-lg-3 col-md-6">
                     <div class="cajita">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
@@ -216,7 +197,6 @@
                     </div>
                     <p class="texto">Calle Falsa 123, Springfield</p>
                 </div>
-    
                 <div class="subcont__redes col-lg-3 col-md-6">
                     <div class="cajita">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
@@ -226,7 +206,6 @@
                     </div>
                     <p class="texto">Cel. +54 011 1122-3344 <br>Tel. 011 4466-7788 <br>Fax. 999-0000 </p>
                 </div>
-    
                 <div class="subcont__redes col-lg-3 col-md-6">
                     <div class="cajita">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope-arrow-down" viewBox="0 0 16 16">
@@ -238,7 +217,6 @@
                     <p class="texto"><a class="mail" href="https://www.gmail.com/" target="_blank">Clinica@SanLucifer.com</a></p>
                     </p>
                 </div>
-                
                 <div class="subcont__redes col-lg-3 col-md-6">
                     <div class="cajita">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16">
@@ -249,9 +227,7 @@
                     </div>
                     <p class="texto"><a class="mail" href="https://www.gmail.com/" target="_blank">rrhh@SanLucifer.com</a></p>
                 </div>
-    
             </div>
-
             <p class="texto texto__redes">Seguinos en Nuestras Redes</p>
             <div class="redes">
                 <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img class="img__redes" src="../img/Whatsapp.jpe" alt="Logo Whatsapps"></a>
@@ -263,11 +239,13 @@
                 <p>Por Emergencias comunicarse al 911 o 0800-SanLucifer (666-6666).</p>
                 <p>®Todos los Derechos Reservados®</p>   
             </div>
-
             <svg class="chatea" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
               <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
             </svg>
         </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

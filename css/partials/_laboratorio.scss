@@ -1,17 +1,21 @@
 .cont__carrusel{
     height: 350px;
-
     .img__banner{
         width: 100%;
         height: auto;
     }
 }
-
 .img__labo{
     max-width: 250px;
     max-height: 250px;
+    transition: 0.4s;
 }
-
+.rotHoraria:hover{
+        transform: rotate(4deg);
+        }
+.rotAnti:hover{
+       transform: rotate(-4deg);
+        }
 .instrumento{
     display: flex;
     flex-direction: column;

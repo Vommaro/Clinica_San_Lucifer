@@ -8,9 +8,6 @@
     flex-wrap: wrap;
     align-items: flex-start;
     position: relative;
-
-
-
     .gradiente {
         background-image: linear-gradient(rgba(34, 175, 240, 0.61), transparent, transparent, transparent,transparent,transparent,transparent, transparent);
         position: absolute;
@@ -18,31 +15,21 @@
         height: 100%;
         top: 0;
     }
-    
-
-
     .nav{
         background-color: transparent !important; 
         display: flex;
-        /* padding: 1rem;
-        margin: 1rem; */
-        display: flex;
         flex-grow: 1;
         gap: 1rem;
-
         .boton__navbar{
             display: none;
-
-            @include laptop {
+            @include flag{
                 display: block;
             }
         }
-
         .cont__img{
-            width: 75px;
-            height: 75px;
-            margin: 0.5rem;
-
+            width: 100px;
+            height: 100px;
+            margin: 0;
             .logo{
                 max-width: 100px;
                 object-fit: contain;
@@ -53,8 +40,6 @@
                 }
             }
         }
-
-
         .cont__menu{
             display: flex;
             justify-content: space-around;
@@ -63,7 +48,9 @@
             @media screen and (max-width: 992px){
                 display: none;
                 }
-        
+                    #itemMenu:hover a{
+                     color:$maincolor;
+                 }
                 .menu{
                     list-style: none;
                     margin: 1rem;
@@ -72,23 +59,44 @@
                     gap: 1rem;
                     align-items: center;
                     justify-content: space-between;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 22px;
                     flex-grow:  1;
                     position: relative;
-        
+                    @include borrar {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 20px;
+                    }
                     .item__menu{
+                        display: flex;
                         padding-inline: 1rem;
                         margin-inline: 1rem;
                         color: black;
-                        font-size: 25px;
-
+                        text-wrap: wrap;
+                        flex-wrap: wrap;
+                        transition: .6s;
                         &:hover{
                             border: solid #6767e4 2px;
                             color: #6767e4;  
                             border-radius: 7px;
                             transform: translateY(-0.2rem);         
-                            transition: 0.5s;
+                        }
+                        @include borrar{
+                            padding: 0;
+                            margin: 0.25rem;
+                        }
+                        & a:hover{
+                            color: $maincolor;
                         }
                     }
                 }
+                // .modoOscuro{
+                //     display: inline;
+                //     position: fixed !important;
+                //     top: 100px;
+                //     left: 20px;
+                // }
             }
-        }}
+        }
+    }

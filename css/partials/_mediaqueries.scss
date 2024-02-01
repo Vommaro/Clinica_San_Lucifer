@@ -1,6 +1,6 @@
-.borrar{
-    @media screen and (max-width: 1300px){
-        display: none;
+@mixin borrar{
+    @media screen and (max-width: 1370px){
+        @content;
         }
 }
 @mixin laptop {
@@ -15,6 +15,11 @@
 }
 @mixin mobile {
     @media screen and (max-width: 425px) {
+        @content;
+    }
+}
+@mixin flag {
+    @media screen and (max-width: 992px) {
         @content;
     }
 }
