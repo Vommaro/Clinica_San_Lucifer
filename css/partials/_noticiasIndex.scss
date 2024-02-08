@@ -32,8 +32,8 @@
         width: 700px;
     }
     @include tablet{
-        width: 600px;
-        aspect-ratio: 16/9;
+        width: 400px;
+        aspect-ratio: 1;
     }
     @include mobile {
         aspect-ratio: 1;

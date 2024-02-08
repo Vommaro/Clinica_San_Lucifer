@@ -1,3 +1,6 @@
+ .conteiner__labo{
+    padding: 0;
+    margin: 0;
 .cont__carrusel{
     height: 350px;
     .img__banner{
@@ -6,9 +9,15 @@
     }
 }
 .img__labo{
+    display: flex;
     max-width: 250px;
     max-height: 250px;
     transition: 0.4s;
+    @include mobile{
+        max-width: 200px;
+        align-items: center;
+        justify-content: center;
+        }   
 }
 .rotHoraria:hover{
         transform: rotate(4deg);
@@ -19,7 +28,5 @@
 .instrumento{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     flex-grow: 1;
-}
+}}
